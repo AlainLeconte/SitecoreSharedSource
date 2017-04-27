@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GoogleTranslate", "GoogleTranslate", "{07A419C3-9856-4A1A-A9A9-CB392E80BD31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.SharedSource.GoogleTranslate", "GoogleTranslate\Sitecore.SharedSource.GoogleTranslate.csproj", "{B4CAD29B-BA43-45D0-8B72-7F9597EC8D67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LanguageMigrationTool", "LanguageMigrationTool", "{E6F0EEB6-A398-4F7A-A7D1-544670A53FA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.SharedSource.PartialLanguageFallback", "PartialLanguageFallback\Sitecore.SharedSource.PartialLanguageFallback.csproj", "{AF8CACBD-DD00-4635-911F-9041269D38D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.SharedSource.LanguageMigrationTool", "LanguageMigrationTool\Sitecore.SharedSource.LanguageMigrationTool.csproj", "{B17A1D44-E236-4038-A6D7-6E17B6EE667C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SmartTools", "SmartTools", "{A5C2E9B5-52E2-4E8D-8268-F778DB483B8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.SharedSource.SmartTools", "SmartTools\Sitecore.SharedSource.SmartTools.csproj", "{B6BE4A6E-94BE-4114-B067-80BF0A3115F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4CAD29B-BA43-45D0-8B72-7F9597EC8D67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4CAD29B-BA43-45D0-8B72-7F9597EC8D67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4CAD29B-BA43-45D0-8B72-7F9597EC8D67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4CAD29B-BA43-45D0-8B72-7F9597EC8D67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF8CACBD-DD00-4635-911F-9041269D38D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF8CACBD-DD00-4635-911F-9041269D38D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF8CACBD-DD00-4635-911F-9041269D38D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF8CACBD-DD00-4635-911F-9041269D38D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B17A1D44-E236-4038-A6D7-6E17B6EE667C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B17A1D44-E236-4038-A6D7-6E17B6EE667C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B17A1D44-E236-4038-A6D7-6E17B6EE667C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B17A1D44-E236-4038-A6D7-6E17B6EE667C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6BE4A6E-94BE-4114-B067-80BF0A3115F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6BE4A6E-94BE-4114-B067-80BF0A3115F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6BE4A6E-94BE-4114-B067-80BF0A3115F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6BE4A6E-94BE-4114-B067-80BF0A3115F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B4CAD29B-BA43-45D0-8B72-7F9597EC8D67} = {07A419C3-9856-4A1A-A9A9-CB392E80BD31}
+		{AF8CACBD-DD00-4635-911F-9041269D38D1} = {E6F0EEB6-A398-4F7A-A7D1-544670A53FA1}
+		{B17A1D44-E236-4038-A6D7-6E17B6EE667C} = {E6F0EEB6-A398-4F7A-A7D1-544670A53FA1}
+		{B6BE4A6E-94BE-4114-B067-80BF0A3115F4} = {A5C2E9B5-52E2-4E8D-8268-F778DB483B8A}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://gaqprtfs01.gs.adinternal.com:8080/tfs/sagenaiswebservices
+		SccProjectUniqueName0 = GoogleTranslate\\Sitecore.SharedSource.GoogleTranslate.csproj
+		SccProjectTopLevelParentUniqueName0 = Sitecore.SharedSource.sln
+		SccProjectName0 = GoogleTranslate
+		SccAuxPath0 = http://gaqprtfs01.gs.adinternal.com:8080/tfs/sagenaiswebservices
+		SccLocalPath0 = GoogleTranslate
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = PartialLanguageFallback\\Sitecore.SharedSource.PartialLanguageFallback.csproj
+		SccProjectTopLevelParentUniqueName1 = Sitecore.SharedSource.sln
+		SccProjectName1 = PartialLanguageFallback
+		SccAuxPath1 = http://gaqprtfs01.gs.adinternal.com:8080/tfs/sagenaiswebservices
+		SccLocalPath1 = PartialLanguageFallback
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName2 = LanguageMigrationTool\\Sitecore.SharedSource.LanguageMigrationTool.csproj
+		SccProjectTopLevelParentUniqueName2 = Sitecore.SharedSource.sln
+		SccProjectName2 = LanguageMigrationTool
+		SccAuxPath2 = http://gaqprtfs01.gs.adinternal.com:8080/tfs/sagenaiswebservices
+		SccLocalPath2 = LanguageMigrationTool
+		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName3 = SmartTools\\Sitecore.SharedSource.SmartTools.csproj
+		SccProjectTopLevelParentUniqueName3 = Sitecore.SharedSource.sln
+		SccProjectName3 = SmartTools
+		SccAuxPath3 = http://gaqprtfs01.gs.adinternal.com:8080/tfs/sagenaiswebservices
+		SccLocalPath3 = SmartTools
+		SccProvider3 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="C:\Sage\TFS\SageUnity\Source\Main\0\_build\ThirdParty.proj" />
+  <!-- For solutions -->
+  <!-- NOTE: Getting solution properties from the root where Master solution is located -->
+  <Import Project="$(SolutionDir)_Properties\Master.Solution.Properties" Condition="Exists('$(SolutionDir)_Properties\Master.Solution.Properties')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B17A1D44-E236-4038-A6D7-6E17B6EE667C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sitecore.SharedSource.LanguageMigrationTool</RootNamespace>
+    <AssemblyName>Sitecore.SharedSource.LanguageMigrationTool</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Lucene.Net">
+      <HintPath>$(Lucene_Net_dll)</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="scSearchContrib.Searcher, Version=2.1.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\scSearchContrib.Searcher.2.1.0.1\lib\net35\scSearchContrib.Searcher.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Client">
+      <HintPath>$(Sitecore_Client_dll)</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Sitecore.Kernel">
+      <HintPath>$(Sitecore_Kernel_dll)</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\LanguageHelper.cs" />
+    <Compile Include="Helpers\SearchHelper.cs" />
+    <Compile Include="Helpers\SitecoreHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sitecore modules\Web\LanguageTools\LanguageMigration.aspx.cs">
+      <DependentUpon>LanguageMigration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sitecore modules\Web\LanguageTools\LanguageMigration.aspx.designer.cs">
+      <DependentUpon>LanguageMigration.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SitecoreCommands\CreateVersionInAllLanguages.cs" />
+    <Compile Include="SitecoreProcessors\CreateVersionInAllLanguagesOnCreate.cs" />
+    <Compile Include="SitecoreProcessors\CultureResolver.cs" />
+    <Compile Include="SitecoreProcessors\ItemLanguageValidation.cs" />
+    <Compile Include="SitecoreProcessors\RegionValidationModule.cs" />
+    <Compile Include="SitecoreProcessors\TryGetFromFallbackLanguage.cs" />
+    <Compile Include="SitecoreProviders\CustomLinkProvider.cs" />
+    <Compile Include="SitecoreProviders\CustomMediaProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sitecore modules\Web\LanguageTools\images\ajax-loader.gif" />
+    <Content Include="sitecore modules\Web\LanguageTools\images\icon-panel-close.png" />
+    <Content Include="sitecore modules\Web\LanguageTools\images\icon-panel-open.png" />
+    <Content Include="sitecore modules\Web\LanguageTools\images\icon-print-page.png" />
+    <Content Include="sitecore modules\Web\LanguageTools\images\icon-topic-blue-arrow.png" />
+    <Content Include="sitecore modules\Web\LanguageTools\images\icon-topic-green-arrow.png" />
+    <Content Include="sitecore modules\Web\LanguageTools\images\icon-topic-green-collapse-arrow.png" />
+    <Content Include="sitecore modules\Web\LanguageTools\images\icon-topic-green-expand-arrow.png" />
+    <Content Include="sitecore modules\Web\LanguageTools\images\icon-topic-red-arrow.png" />
+    <Content Include="sitecore modules\Web\LanguageTools\jquery-library.js" />
+    <Content Include="sitecore modules\Web\LanguageTools\Language.css" />
+    <Content Include="sitecore modules\Web\LanguageTools\LanguageMigration.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PartialLanguageFallback\Sitecore.SharedSource.PartialLanguageFallback.csproj">
+      <Project>{af8cacbd-dd00-4635-911f-9041269d38d1}</Project>
+      <Name>Sitecore.SharedSource.PartialLanguageFallback</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>$(SolutionDir)_Deploy\Deploy.bat $(SolutionDir) $(ProjectDir) $(IisRootFolder)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
