@@ -1,1 +1,3 @@
 .cs\
+Sitecore.Kernel.dll
+Sitecore.client.dll
